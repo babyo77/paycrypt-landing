@@ -28,15 +28,27 @@ export const HeroHeader = () => {
 
               <div className="mx-auto size-fit lg:block">
                 <ul className="flex gap-1">
-                  {menuItems.map((item, index) => (
-                    <li key={index}>
-                      <Button asChild variant="ghost" size="sm">
-                        <Link href={item.href} className="text-base">
-                          <span>{item.name}</span>
-                        </Link>
-                      </Button>
-                    </li>
-                  ))}
+                  <>
+                    {menuItems.map((item, index) => (
+                      <li key={index}>
+                        <Button
+                          className={index == 0 ? "max-md:hidden" : ""}
+                          asChild
+                          variant="ghost"
+                          size="sm"
+                        >
+                          <Link href={item.href} className="text-base">
+                            <span>{item.name}</span>
+                          </Link>
+                        </Button>
+                      </li>
+                    ))}
+                    <Button asChild size="sm" className="md:hidden ml-4">
+                      <Link href="https://app.paycrypt.tech">
+                        <span>Open App</span>
+                      </Link>
+                    </Button>
+                  </>
                 </ul>
               </div>
             </div>

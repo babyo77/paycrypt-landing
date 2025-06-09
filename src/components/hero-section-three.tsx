@@ -64,8 +64,8 @@ export default function HeroSection() {
         <section>
           <div className="relative py-24">
             <div className="mx-auto max-w-6xl ">
-              <div className="flex max-md:flex-col max-md:gap-5  items-end justify-between">
-                <h1 className="mt-8 max-w-2xl tracking-normal text-balance text-5xl font-semibold lg:text-6xl">
+              <div className="flex max-md:flex-col max-md:gap-5 items-end justify-between">
+                <h1 className="mt-8 md:min-w-3xl tracking-normal text-balance text-5xl font-semibold lg:text-6xl">
                   Next-Gen Payment Infrastructure
                 </h1>
                 <div className="max-w-lg">
