@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { HeroHeader } from "./header";
 
 import Footer from "./footer";
+import Image from "next/image";
 const BACKED_BY = [
   {
     name: "Circle",
@@ -111,23 +112,14 @@ export default function HeroSection() {
               </div>
 
               <div className="relative mt-8 sm:mt-10">
-                <div className=" rounded-lg border overflow-hidden">
-                  <video
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    poster="https://us-east-1.tixte.net/uploads/tanmay111-files.tixte.co/gradii-1600x900.webp"
-                    preload="metadata"
-                    className=" w-full"
-                    src="https://us-east-1.tixte.net/uploads/tanmay111-files.tixte.co/paycrypt-demo-25-apr-1745519925395.mp4"
-                  >
-                    <source
-                      src="https://us-east-1.tixte.net/uploads/tanmay111-files.tixte.co/paycrypt-demo-25-apr-1745519925395.mp4"
-                      type="video/mp4"
-                    />
-                    Your browser does not support the video tag.
-                  </video>
+                <div className=" z-10 rounded-lg border overflow-hidden">
+                  <Image
+                    alt="Paycrypt Dashboard"
+                    height={500}
+                    width={500}
+                    className=" w-full h-full object-cover"
+                    src="https://us-east-1.tixte.net/uploads/tanmay111-files.tixte.co/Screenshot_2025-06-09_at_9.14.11%E2%80%AFPM.png"
+                  />
                 </div>
               </div>
             </div>
