@@ -153,7 +153,7 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      <div id="solutions" className=" bg-muted/30 py-20 border-b">
+      <div id="solutions" className=" bg-muted/30 py-20">
         <div className="max-w-6xl mx-auto max-md:px-4">
           <h2 className="text-center text-3xl max-md:text-start md:text-4xl lg:text-5xl text-zinc-950 font-semibold mb-4">
             Enterprise-Grade Solutions
@@ -193,6 +193,29 @@ export default function HeroSection() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </div>
+      <div className="bg-muted/30 py-20 border-b">
+        <div className="max-w-6xl mx-auto max-md:px-4">
+          <h2 className="text-center text-3xl max-md:text-start md:text-4xl lg:text-5xl text-zinc-950 font-semibold mb-4">
+            Ready to Transform Your Payments?
+          </h2>
+          <div className="text-base md:text-base max-md:text-start text-zinc-500 mb-8 text-center">
+            <p>Join the future of global payments today.</p>
+            <p>Start accepting crypto and fiat payments in minutes.</p>
+          </div>
+          <div className="flex justify-center gap-4">
+            <Button asChild size="lg">
+              <Link href="https://app.paycrypt.tech">
+                <span className="tracking-tighter">Get Started</span>
+              </Link>
+            </Button>
+            <Button asChild size="lg" variant="outline">
+              <Link href="">
+                <span className="tracking-tighter">Contact Sales</span>
+              </Link>
+            </Button>
           </div>
         </div>
       </div>
