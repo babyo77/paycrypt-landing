@@ -104,7 +104,6 @@ export default function HeroSection() {
                         src={company.logoUrl}
                         alt={`${company.name} Logo`}
                         height="20"
-                        width="auto"
                       />
                     </Link>
                   ))}
