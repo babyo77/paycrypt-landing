@@ -80,7 +80,7 @@ export default function HeroSection() {
                       </Link>
                     </Button>
                     <Button key={2} asChild size="lg" variant="outline">
-                      <Link href="">
+                      <Link href="https://cal.com/tanmay7/15min">
                         <span className=" tracking-tighter">Get a demo</span>
                       </Link>
                     </Button>
@@ -212,8 +212,8 @@ export default function HeroSection() {
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline">
-              <Link href="">
-                <span className="tracking-tighter">Contact Sales</span>
+              <Link href="coming-soon">
+                <span className="tracking-tighter">Docs</span>
               </Link>
             </Button>
           </div>
