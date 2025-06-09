@@ -9,17 +9,17 @@ export const Logo = ({
 }) => {
   return (
     <div className="flex items-center">
-      {/* <img
+      <img
         alt="Paycrypt Logo"
         loading="lazy"
         width="30"
         height="30"
         decoding="async"
-        className="size-7"
+        className="size-6"
         style={{ color: "transparent" }}
-        src="https://us-east-1.tixte.net/uploads/tanmay111-files.tixte.co/p_transparent.png"
-      /> */}
-      <p className=" font-bold tracking-tighter">Paycrypt</p>
+        src="https://us-east-1.tixte.net/uploads/tanmay111-files.tixte.co/Untitled_design.png"
+      />
+      <p className=" font-bold tracking-tighter -ml-[0.38rem]">aycrypt</p>
     </div>
   );
 };
