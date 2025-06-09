@@ -5,6 +5,9 @@ import Analytics from "@/components/analytics";
 export const metadata: Metadata = {
   title: "Paycrypt",
   description: "Next-Gen Payment Infrastructure",
+  icons: {
+    icon: "https://us-east-1.tixte.net/uploads/tanmay111-files.tixte.co/Untitled_design.png",
+  },
 };
 
 export default function RootLayout({
