@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { aeonikPro } from "@/lib/fonts";
 import "./globals.css";
 import Analytics from "@/components/analytics";
+import { ReactLenis } from "lenis/react";
+
 export const metadata: Metadata = {
   title: "Paycrypt",
   description: "Next-Gen Payment Infrastructure",
@@ -20,7 +22,7 @@ export default function RootLayout({
       <body
         className={`${aeonikPro.variable} font-sans antialiased tracking-tighter`}
       >
-        {children}
+        <ReactLenis root>{children}</ReactLenis>
         <Analytics />
       </body>
     </html>

@@ -12,7 +12,7 @@ export default function TermsOfService() {
             Paycrypt - Terms of Service
           </h1>
           <p className="text-zinc-500 font-medium [&:not(:first-child)]:mt-4">
-            Last Updated: 03/19/2024
+            Last Updated: 21/05/2025
             <br />
             Paycrypt
           </p>
