@@ -100,10 +100,11 @@ export default function HeroSection() {
                       className="flex"
                     >
                       <img
-                        className="mx-auto h-5 w-fit"
+                        className="mx-auto h-5 w-auto object-contain"
                         src={company.logoUrl}
                         alt={`${company.name} Logo`}
                         height="20"
+                        width="auto"
                       />
                     </Link>
                   ))}
