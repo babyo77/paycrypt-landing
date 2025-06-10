@@ -34,17 +34,17 @@ const SOLUTIONS = [
     desc: "Connect with customers and businesses worldwide through our extensive payment network.",
   },
   {
-    title: "Payment Link",
-    desc: "Create and share payment links instantly with customers for quick and easy transactions.",
+    title: "Checkout Link",
+    desc: "Create and share Checkout links instantly with customers for quick and easy transactions.",
   },
 
   {
-    title: "Compliance Automation",
-    desc: "Built-in KYC/AML tools tailored for global regulations and seamless compliance.",
+    title: "Instant Invoicing",
+    desc: "Create and manage professional invoices with automated payment tracking.",
   },
   {
-    title: "Multi-Currency Accounts",
-    desc: "Hold, send, and receive both fiat and stablecoins in one unified account.",
+    title: "Instant Settlement",
+    desc: "Instant settlements in your preferred currency with automated reconciliation.",
   },
   {
     title: "Automated Reconciliation",
