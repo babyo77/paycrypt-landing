@@ -17,38 +17,47 @@ const BACKED_BY = [
 const BENEFITS = [
   {
     title: "Multi-currency payments",
+    image: "",
     desc: "Accept payments in any stablecoin or fiat currency you prefer.",
   },
   {
-    title: "Offer instant onramp and offramp",
+    title: "Onramp and offramp",
+    image: "",
     desc: "Convert between crypto and fiat instantly with competitive rates.",
   },
   {
     title: "0% Transaction fee",
-    desc: "Get your stablecoin funds instantly with our reliable payment infrastructure.",
+    image: "",
+    desc: "Get your stablecoin funds instantly with our payment infrastructure.",
   },
 ];
 
 const SOLUTIONS = [
   {
     title: "Global Payment Network",
+    image: "",
     desc: "Connect with customers and businesses worldwide through our extensive payment network.",
   },
   {
     title: "Checkout Link",
+    image: "",
     desc: "Create and share Checkout links instantly with customers for quick and easy transactions.",
   },
 
   {
     title: "Instant Invoicing",
+    image:
+      "https://us-east-1.tixte.net/uploads/tanmay111-files.tixte.co/invoice-paycrypt.webp",
     desc: "Create and manage professional invoices with automated payment tracking.",
   },
   {
     title: "Instant Settlement",
+    image: "",
     desc: "Instant settlements in your preferred currency with automated reconciliation.",
   },
   {
     title: "Automated Reconciliation",
+    image: "",
     desc: "Simplify refunds and transaction tracking with our automated reconciliation tools.",
   },
 ];
@@ -137,17 +146,25 @@ export default function HeroSection() {
             <p>Get paid in your preferred currency.</p>
           </div>
           <div className="flex gap-6 md:w-full max-md:flex-col items-stretch">
-            {BENEFITS.map((solution) => (
+            {BENEFITS.map((benefits) => (
               <div
-                key={solution.title}
+                key={benefits.title}
                 className="bg-gradient-to-b from-white to-zinc-50 rounded-lg border border-zinc-200 "
               >
-                <div className="h-[296px] w-full flex items-center justify-center overflow-hidden"></div>
+                <div className="h-[296px] w-full flex items-center p-4 justify-center overflow-hidden">
+                  <Image
+                    alt={benefits.title}
+                    className=" h-full w-full object-contain mix-blend-multiply"
+                    src={benefits.image}
+                    height={500}
+                    width={500}
+                  />
+                </div>
                 <div className="p-6 w-full">
                   <h3 className="mb-2 text-xl font-semibold text-zinc-950">
-                    {solution.title}
+                    {benefits.title}
                   </h3>
-                  <p className="text-zinc-500 text-sm">{solution.desc}</p>
+                  <p className="text-zinc-500 text-sm">{benefits.desc}</p>
                 </div>
               </div>
             ))}
@@ -169,7 +186,15 @@ export default function HeroSection() {
                 key={solution.title}
                 className="bg-gradient-to-b from-white to-zinc-50 rounded-lg border border-zinc-200 "
               >
-                <div className="h-[296px] w-full flex items-center justify-center overflow-hidden"></div>
+                <div className="h-[296px] w-full flex items-center p-4 justify-center overflow-hidden">
+                  <Image
+                    alt={solution.title}
+                    className=" h-full w-full object-contain mix-blend-multiply"
+                    src={solution.image}
+                    height={500}
+                    width={500}
+                  />
+                </div>
                 <div className="p-6 w-full">
                   <h3 className="mb-2 text-xl font-semibold text-zinc-950">
                     {solution.title}
@@ -185,7 +210,15 @@ export default function HeroSection() {
                 key={solution.title}
                 className="bg-gradient-to-b from-white to-zinc-50 rounded-lg border border-zinc-200 "
               >
-                <div className="h-[296px] w-full flex items-center justify-center overflow-hidden"></div>
+                <div className="h-[296px] w-full flex items-center p-4 justify-center overflow-hidden">
+                  <Image
+                    alt={solution.title}
+                    className=" h-full w-full object-contain mix-blend-multiply"
+                    src={solution.image}
+                    height={500}
+                    width={500}
+                  />
+                </div>
                 <div className="p-6 w-full">
                   <h3 className="mb-2 text-xl font-semibold text-zinc-950">
                     {solution.title}
