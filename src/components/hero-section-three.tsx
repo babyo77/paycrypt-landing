@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { HeroHeader } from "./header";
 
 import Footer from "./footer";
@@ -24,7 +25,7 @@ const BENEFITS = [
   },
   {
     title: "0% Transaction fee",
-    desc: "Get your funds instantly with our reliable payment infrastructure.",
+    desc: "Get your stablecoin funds instantly with our reliable payment infrastructure.",
   },
 ];
 
@@ -62,37 +63,40 @@ export default function HeroSection() {
       ></div>
       <main className="overflow-hidden max-md:px-4">
         <section>
-          <div className="relative py-24">
+          <div className="relative md:px-4">
             <div className="mx-auto max-w-6xl ">
-              <div className="flex max-md:flex-col max-md:gap-5 items-end justify-between">
-                <h1 className="mt-8 md:min-w-3xl tracking-normal text-balance text-5xl font-semibold lg:text-6xl">
-                  Next-Gen Payment Infrastructure
+              <div className="flex flex-col py-28 md:py-36 md:pb-12 pb-5 space-y-2 items-center text-center">
+                <h1 className="md:min-w-4xl tracking-normal text-balance text-5xl font-semibold lg:text-7xl">
+                  Payment infrastructure
                 </h1>
-                <div className="max-w-lg">
-                  <p className="text-foreground mb-4 text-base">
-                    Seamlessly integrate crypto and fiat payments, reduce costs,
-                    and scale your operations globally.
-                  </p>
-                  <div className="flex items-center gap-2 flex-row max-md:items-start">
-                    <Button asChild size="lg">
-                      <Link href="https://app.paycrypt.tech">
-                        <span className=" tracking-tighter">Get Started</span>
-                      </Link>
-                    </Button>
-                    <Button key={2} asChild size="lg" variant="outline">
-                      <Link href="https://cal.com/tanmay7/15min">
-                        <span className=" tracking-tighter">Get a demo</span>
-                      </Link>
-                    </Button>
-                  </div>
+                <p className="md:min-w-4xl tracking-normal text-balance text-5xl font-semibold lg:text-7xl">
+                  for next-gen.
+                </p>
+
+                <p className="text-muted-foreground/80 max-w-xl mx-auto tracking-normal md:text-lg text-base py-5">
+                  Seamlessly integrate crypto and fiat payments, reduce costs,
+                  and scale your operations globally.
+                </p>
+
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-2 w-full">
+                  <Input
+                    type="email"
+                    placeholder="Enter your email"
+                    className="w-full h-10 md:h-11 sm:w-[300px]"
+                  />
+                  <Button asChild size="lg" className="w-full md:w-fit">
+                    <Link href="https://app.paycrypt.tech">
+                      <span className=" tracking-tighter">Get Started</span>
+                    </Link>
+                  </Button>
                 </div>
               </div>
 
-              <div className="mt-8">
+              {/* <div className="text-center">
                 <p className="text-muted-foreground font-medium">
                   Trusted by :
                 </p>
-                <div className="mt-4 flex items-center gap-12">
+                <div className="mt-4 flex items-center justify-center gap-12">
                   {BACKED_BY.map((company) => (
                     <Link
                       href={company.url}
@@ -109,7 +113,7 @@ export default function HeroSection() {
                     </Link>
                   ))}
                 </div>
-              </div>
+              </div> */}
 
               <div className="relative mt-8 sm:mt-10">
                 <div className=" z-10 rounded-lg border overflow-hidden">
@@ -126,7 +130,7 @@ export default function HeroSection() {
           </div>
         </section>
       </main>
-      <div id="benefits" className=" bg-muted/30 md:py-20 py-10 ">
+      <div id="benefits" className=" bg-muted/30 md:py-20 py-10 md:px-4">
         <div className="max-w-6xl mx-auto max-md:px-4">
           <h2 className="text-center text-3xl max-md:text-start md:text-4xl lg:text-5xl text-zinc-950 font-semibold mb-4">
             Unified Payment Infrastructure
@@ -153,7 +157,7 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      <div id="solutions" className=" bg-muted/30 md:py-20 py-10">
+      <div id="solutions" className=" bg-muted/30 md:py-20 py-10 md:px-4">
         <div className="max-w-6xl mx-auto max-md:px-4">
           <h2 className="text-center text-3xl max-md:text-start md:text-4xl lg:text-5xl text-zinc-950 font-semibold mb-4">
             Enterprise-Grade Solutions
