@@ -108,7 +108,7 @@ export default function HeroSection() {
                     height={500}
                     width={500}
                     className=" w-full h-full object-cover"
-                    src="https://us-east-1.tixte.net/uploads/tanmay111-files.tixte.co/Screenshot_2025-06-09_at_9.14.11%E2%80%AFPM.webp"
+                    src="https://us-east-1.tixte.net/uploads/tanmay111-files.tixte.co/Screenshot_2025-06-12_at_9.41.13%E2%80%AFPM.webp"
                   />
                 </div>
               </div>
