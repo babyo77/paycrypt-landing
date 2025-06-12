@@ -15,7 +15,7 @@ export const HeroHeader = () => {
   return (
     <header>
       <nav className={cn("fixed z-20 w-full transition-all duration-300")}>
-        <div className="mx-auto py-4 max-w-full bg-white/50 backdrop-blur-3xl">
+        <div className="mx-auto py-3 max-w-full bg-white/50 backdrop-blur-3xl">
           <div className="relative flex max-w-6xl mx-auto justify-between items-center gap-6 lg:gap-0 md:px-0 px-4">
             <Link href="/" aria-label="home" className="flex items-center">
               <Logo />

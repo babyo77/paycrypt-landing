@@ -15,7 +15,7 @@ export const Logo = ({
         width="30"
         height="30"
         decoding="async"
-        className="size-7 mix-blend-multiply"
+        className="size-6 mix-blend-multiply"
         src="https://us-east-1.tixte.net/uploads/tanmay111-files.tixte.co/Untitled_design.png"
       />
       <p className=" font-bold tracking-tighter -ml-[0.38rem]">aycrypt</p>
