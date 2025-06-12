@@ -237,7 +237,7 @@ export default function HeroSection() {
         style={{ height: "500px" }}
       >
         <LiquidChrome baseColor={[0.1, 0.1, 0.1]} speed={1} amplitude={0.3} />
-        <div className="bg-black/30 z-20 absolute top-0 left-1/2 -translate-x-1/2 md:py-20 py-10 border-b h-full w-full flex items-center justify-center">
+        <div className="bg-black/30 absolute top-0 left-1/2 -translate-x-1/2 md:py-20 py-10 border-b h-full w-full flex items-center justify-center">
           <div className="max-w-6xl mx-auto max-md:px-4">
             <h2 className="text-center text-3xl max-md:text-start md:text-4xl lg:text-5xl text-white font-semibold mb-3">
               Ready to Transform Your Payments?
