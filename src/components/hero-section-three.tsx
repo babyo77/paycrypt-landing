@@ -91,7 +91,7 @@ export default function HeroSection() {
                   <Input
                     type="email"
                     placeholder="Enter your email"
-                    className="w-full h-10 md:h-11 sm:w-[300px]"
+                    className="w-full bg-white h-10 md:h-11 sm:w-[300px]"
                   />
                   <Button asChild size="lg" className="w-full md:w-fit">
                     <Link href="https://app.paycrypt.tech">
