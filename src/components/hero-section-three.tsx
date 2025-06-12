@@ -77,10 +77,10 @@ export default function HeroSection() {
             <div className="mx-auto max-w-6xl ">
               <div className="flex flex-col py-28 md:py-36 md:pb-12 pb-5 space-y-2 items-center text-center">
                 <h1 className="md:min-w-4xl tracking-normal text-balance text-5xl font-semibold lg:text-7xl">
-                  Payment rails for the
+                  Payment rails for <span className=" max-md:hidden">the</span>
                 </h1>
                 <p className="md:min-w-4xl tracking-normal text-balance text-5xl font-semibold lg:text-7xl">
-                  new internet.
+                  <span className=" md:hidden">the</span> new internet.
                 </p>
 
                 <p className="text-muted-foreground/80 max-w-xl mx-auto tracking-normal md:text-lg text-base py-5">
