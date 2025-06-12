@@ -1,7 +1,9 @@
 import Link from "next/link";
+import { redirect } from "next/navigation";
 import React from "react";
 
 export default function ComingSoon() {
+  redirect("https://docs.paycrypt.tech");
   return (
     <div className="p-4 font-semibold">
       <p>We are working on it</p>
