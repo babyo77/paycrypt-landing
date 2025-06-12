@@ -92,29 +92,6 @@ export default function HeroSection() {
                 </div>
               </div>
 
-              {/* <div className="text-center">
-                <p className="text-muted-foreground font-medium">
-                  Trusted by :
-                </p>
-                <div className="mt-4 flex items-center justify-center gap-12">
-                  {BACKED_BY.map((company) => (
-                    <Link
-                      href={company.url}
-                      key={company.name}
-                      className="flex"
-                    >
-                      <img
-                        className="mx-auto h-5 w-auto object-contain"
-                        src={company.logoUrl}
-                        alt={`${company.name} Logo`}
-                        height="20"
-                        width="auto"
-                      />
-                    </Link>
-                  ))}
-                </div>
-              </div> */}
-
               <div className="relative mt-8 sm:mt-10">
                 <div className=" z-10 rounded-lg border overflow-hidden">
                   <Image
@@ -124,6 +101,26 @@ export default function HeroSection() {
                     className=" w-full h-full object-cover"
                     src="https://us-east-1.tixte.net/uploads/tanmay111-files.tixte.co/Screenshot_2025-06-09_at_9.14.11%E2%80%AFPM.webp"
                   />
+                </div>
+              </div>
+              <div className=" text-center py-4 pb-6">
+                <p className="text-muted-foreground font-medium">Trusted by</p>
+                <div className="mt-4 flex justify-center">
+                  {BACKED_BY.map((company) => (
+                    <Link
+                      href={company.url}
+                      key={company.name}
+                      className="flex"
+                    >
+                      <img
+                        className="mx-auto h-5 grayscale w-auto object-contain "
+                        src={company.logoUrl}
+                        alt={`${company.name} Logo`}
+                        height="24"
+                        width="auto"
+                      />
+                    </Link>
+                  ))}
                 </div>
               </div>
             </div>
@@ -209,7 +206,7 @@ export default function HeroSection() {
             <p>Join the future of global payments today.</p>
             <p>Start accepting crypto and fiat payments in minutes.</p>
           </div>
-          <div className="flex justify-center max-md:justify-start gap-4">
+          <div className="flex justify-center max-md:justify-start gap-2">
             <Button asChild size="lg">
               <Link href="https://app.paycrypt.tech">
                 <span className="tracking-tighter">Get Started</span>
