@@ -6,6 +6,7 @@ import { HeroHeader } from "./header";
 
 import Footer from "./footer";
 import Image from "next/image";
+import LiquidChrome from "./background";
 const BACKED_BY = [
   {
     name: "Circle",
@@ -230,29 +231,37 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      <div className="bg-muted/30 md:py-20 py-10 border-b">
-        <div className="max-w-6xl mx-auto max-md:px-4">
-          <h2 className="text-center text-3xl max-md:text-start md:text-4xl lg:text-5xl text-zinc-950 font-semibold mb-4">
-            Ready to Transform Your Payments?
-          </h2>
-          <div className="text-base md:text-base max-md:text-start text-zinc-500 md:mb-5 mb-3 text-center">
-            <p>Join the future of global payments today.</p>
-            <p>Start accepting crypto and fiat payments in minutes.</p>
-          </div>
-          <div className="flex justify-center max-md:justify-start gap-2">
-            <Button asChild size="lg">
-              <Link href="https://app.paycrypt.tech">
-                <span className="tracking-tighter">Get Started</span>
-              </Link>
-            </Button>
-            <Button asChild size="lg" variant="outline">
-              <Link href="coming-soon">
-                <span className="tracking-tighter">Docs</span>
-              </Link>
-            </Button>
+
+      <div
+        className="max-w-6xl mx-auto rounded-2xl overflow-hidden relative"
+        style={{ height: "500px" }}
+      >
+        <LiquidChrome baseColor={[0.1, 0.1, 0.1]} speed={1} amplitude={0.3} />
+        <div className="bg-black/30 z-20 absolute top-0 left-1/2 -translate-x-1/2 md:py-20 py-10 border-b h-full w-full flex items-center justify-center">
+          <div className="max-w-6xl mx-auto max-md:px-4">
+            <h2 className="text-center text-3xl max-md:text-start md:text-4xl lg:text-5xl text-white font-semibold mb-3">
+              Ready to Transform Your Payments?
+            </h2>
+            <div className="text-base md:text-base max-md:text-start text-white mb-3 text-center">
+              <p>Join the future of global payments today.</p>
+              <p>Start accepting crypto and fiat payments in minutes.</p>
+            </div>
+            <div className="flex justify-center max-md:justify-start gap-2">
+              <Button asChild size="lg" variant={"outline"}>
+                <Link href="https://app.paycrypt.tech">
+                  <span className="tracking-tighter">Get Started</span>
+                </Link>
+              </Button>
+              <Button asChild size="lg" className="text-white" variant="link">
+                <Link href="coming-soon">
+                  <span className="tracking-tighter">Read Docs</span>
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
       </div>
+
       <Footer />
     </>
   );
