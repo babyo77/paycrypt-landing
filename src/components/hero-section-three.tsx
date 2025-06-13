@@ -233,7 +233,7 @@ export default function HeroSection() {
       </div>
 
       <div
-        className="max-w-6xl mx-auto max-md:max-w-[400px] rounded-xl overflow-hidden relative"
+        className="max-w-6xl mx-auto max-md:max-w-[25rem] rounded-xl overflow-hidden relative"
         style={{ height: "500px" }}
       >
         <LiquidChrome baseColor={[0.1, 0.1, 0.1]} speed={1} amplitude={0.3} />
