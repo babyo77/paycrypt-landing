@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+    <footer className=" py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <p className="font-medium opacity-80 text-sm leading-relaxed mb-12">
           Paycrypt is a financial technology company, not a bank or a money

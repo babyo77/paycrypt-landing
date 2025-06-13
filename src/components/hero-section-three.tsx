@@ -137,7 +137,7 @@ export default function HeroSection() {
           </div>
         </section>
       </main>
-      <div id="benefits" className=" bg-muted/30 md:py-20 py-10 md:px-4">
+      <div id="benefits" className="  md:py-20 py-10 md:px-4">
         <div className="max-w-6xl mx-auto max-md:px-4">
           <h2 className="text-center text-3xl max-md:text-start md:text-4xl lg:text-5xl text-zinc-950 font-semibold mb-4">
             Unified Payment Infrastructure
@@ -172,7 +172,7 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      <div id="solutions" className=" bg-muted/30 md:py-20 py-10 md:px-4">
+      <div id="solutions" className="  md:py-20 py-10 md:px-4">
         <div className="max-w-6xl mx-auto max-md:px-4">
           <h2 className="text-center text-3xl max-md:text-start md:text-4xl lg:text-5xl text-zinc-950 font-semibold mb-4">
             Enterprise-Grade Solutions
@@ -233,12 +233,12 @@ export default function HeroSection() {
       </div>
 
       <div
-        className="max-w-6xl mx-auto max-md:max-w-[25rem] rounded-xl overflow-hidden relative"
+        className="max-w-6xl mx-auto rounded-xl overflow-hidden relative max-md:w-[90%]"
         style={{ height: "500px" }}
       >
         <LiquidChrome baseColor={[0.1, 0.1, 0.1]} speed={1} amplitude={0.3} />
         <div className="bg-black/30 absolute top-0 left-1/2 -translate-x-1/2 md:py-20 py-10 border-b h-full w-full flex items-center justify-center">
-          <div className="max-w-6xl mx-auto max-md:px-4">
+          <div className="max-w-6xl mx-auto px-4">
             <h2 className="text-center text-3xl max-md:text-start md:text-4xl lg:text-5xl text-white font-semibold mb-3">
               Ready to Transform Your Payments?
             </h2>
