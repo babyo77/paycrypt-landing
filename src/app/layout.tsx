@@ -6,9 +6,20 @@ import { ReactLenis } from "lenis/react";
 
 export const metadata: Metadata = {
   title: "Paycrypt",
-  description: "Next-Gen Payment Infrastructure",
+  description: "Payment rails for the new internet",
   icons: {
     icon: "https://us-east-1.tixte.net/uploads/tanmay111-files.tixte.co/Untitled_design.png",
+  },
+  openGraph: {
+    images: [
+      "https://us-east-1.tixte.net/uploads/tanmay111-files.tixte.co/gradii-1600x900.webp",
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [
+      "https://us-east-1.tixte.net/uploads/tanmay111-files.tixte.co/gradii-1600x900.webp",
+    ],
   },
 };
 
