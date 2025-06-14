@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
 import { aeonikPro } from "@/lib/fonts";
+import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Analytics from "@/components/analytics";
 import { ReactLenis } from "lenis/react";
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+});
 
 export const metadata: Metadata = {
   title: "Paycrypt",
@@ -31,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en" className=" scroll-smooth">
       <body
-        className={`${aeonikPro.variable} font-sans antialiased tracking-tighter`}
+        className={`${spaceGrotesk.className} ${spaceGrotesk.variable} antialiased tracking-tighter`}
       >
         <ReactLenis root>{children}</ReactLenis>
         <Analytics />

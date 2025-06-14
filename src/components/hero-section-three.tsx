@@ -236,7 +236,7 @@ export default function HeroSection() {
         className="max-w-6xl mx-auto rounded-xl overflow-hidden relative max-md:w-[90%]"
         style={{ height: "500px" }}
       >
-        <LiquidChrome baseColor={[0.1, 0.1, 0.1]} speed={1} amplitude={0.3} />
+        <LiquidChrome baseColor={[0.1, 0.1, 0.1]} speed={1} amplitude={0.1} />
         <div className="bg-black/30 absolute top-0 left-1/2 -translate-x-1/2 md:py-20 py-10 border-b h-full w-full flex items-center justify-center">
           <div className="max-w-6xl mx-auto px-4">
             <h2 className="text-center text-3xl max-md:text-start md:text-4xl lg:text-5xl text-white font-semibold mb-3">
